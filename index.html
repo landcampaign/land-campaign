@@ -26,12 +26,55 @@ body {
     background:#f4f6f8;
 }
 
-/* HEADER */
-header {
-    background:#0A1F44;
-    color:white;
-    padding:60px 20px;
-    text-align:center;
+/* ===== HERO SECTION ===== */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #ffffff, #f5f5f5);
+}
+
+.hero img {
+  max-width: 180px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin: 10px 0;
+  color: #222;
+}
+
+.tagline {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #2e7d32;
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.btn:hover {
+  background: #1b5e20;
+}
+
+.acknowledgement {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+  max-width: 750px;
 }
 
 /* NAV */
@@ -97,25 +140,28 @@ footer {
 </style>
 </head>
 
-<body style="margin:0;">
+<body>
 
-<header style="text-align:center; padding:0;">
-<img src="file_00000000528c720b95076af698f3b22a.png"
-     alt="Land Campaign Logo"
-     style="width:100%; height:auto; display:block;">
-</header>
+<!-- ===== NEW HERO SECTION ===== -->
+<section class="hero">
 
-<div style="text-align: center; padding: 5px 15px 20px;">
+  <img src="file_00000000528c720b95076af698f3b22a.png" alt="Land Campaign Logo">
 
-  <p style="font-size: 14px; color: #555; line-height: 1.5;">
-    We respectfully acknowledge and honour the significant contributions of Mr. J.H.A. Tremenheere and Queen Victoria in facilitating the allocation of Panchami lands.
+  <h1>Land Campaign</h1>
+
+  <p class="tagline">
+    Protecting Panchami Lands & Empowering Communities
   </p>
 
-</div>
+  <a href="#contact" class="btn">Report Your Issue</a>
 
+  <p class="acknowledgement">
+    We respectfully acknowledge and honour the significant contributions of 
+    <strong>Mr. J.H.A. Tremenheere</strong><br>
+    and <strong>Queen Victoria</strong> in facilitating the allocation of Panchami lands.
+  </p>
 
-
-
+</section>
 
 <nav>
 <a href="#home">Home</a>
@@ -159,28 +205,22 @@ footer {
 
 <h2 style="text-align:center;">2. ORGANISATION VISION</h2>
 
-<!-- Quote -->
 <p style="font-style:italic;text-align:center;color:#555;">
 “Land is not just property — it is dignity, identity, and justice.”
 </p>
 
-<!-- Vision -->
 <p>
 <strong>Vision:</strong><br>
 To build a just and inclusive society where land rights are protected, 
 and every individual has equal access to land, dignity, and opportunity.
 </p>
 
-<!-- Mission -->
 <p><strong>Mission:</strong></p>
 
 <ul>
 <li>To take strong legal and social action against violations of land rights, especially Panchami land encroachments.</li>
-
 <li>To expose injustice, corruption, and irregularities in land ownership.</li>
-
 <li>To safeguard the rightful ownership of marginalized communities.</li>
-
 <li>To raise public awareness and empower citizens to defend their rights.</li>
 </ul>
 
@@ -258,10 +298,8 @@ Email: info@landcampaign.org<br>
 Website: www.landcampaign.org
 </p>
 </div>
- <div class="card">
- 
 
-
+<div class="card">
 
 <p>
 Have information about land issues or Panchami land violations?
@@ -275,11 +313,11 @@ Your voice matters. Reach out to us and help bring justice to affected communiti
 <input type="hidden" name="_captcha" value="false">
 <input type="text" name="_gotcha" style="display:none">
 
-<input type="text" name="name" placeholder="Your Name" required style="width:100%;padding:10px;margin-top:10px;">
-<input type="email" name="email" placeholder="Your Email" required style="width:100%;padding:10px;margin-top:10px;">
-<textarea name="message" placeholder="Your Message" required style="width:100%;padding:10px;margin-top:10px;"></textarea>
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" placeholder="Your Message" required></textarea>
 
-<button type="submit" onclick="this.innerText='Sending...'" style="margin-top:10px;padding:10px 20px;">
+<button type="submit" onclick="this.innerText='Sending...'">
 Send Message
 </button>
 
