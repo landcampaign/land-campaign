@@ -1,317 +1,194 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Land Campaign | Land Rights Support in TN,India </title>
+<title>Land Campaign | Justice for Land Rights</title>
 
-<meta name="description" content="Land Campaign is a non-profit initiative helping people report land issues, protect land rights, and support affected communities across Tamil Nadu and India.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="keywords" content="land issues Tamil Nadu, land rights India, report land problem, land dispute help">
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Land Campaign",
-  "areaServed": "Tamil Nadu, India",
-  "url": "https://landcampaign.org"
-}
-</script>
-    
 <style>
-html { scroll-behavior:smooth; }
 
-body {
-  margin: 0;
-}
-
-.hero {
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
-
-
-
-  margin: 10px 0;
-  color: #222;
-}
-
-.tagline {
-  font-size: 18px;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-.btn {
-  display: inline-block;
-  background: #2e7d32;
-  color: #fff;
-  padding: 12px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 16px;
-  margin-bottom: 25px;
-}
-
-.btn:hover {
-  background: #1b5e20;
-}
-
-.acknowledgement {
-  font-size: 16px;
-  line-height: 1.7;
-  color: #444;
-  max-width: 750px;
+body{
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background:#f4f7fb;
 }
 
 /* NAV */
-nav {
-    background:#071633;
-    position:sticky;
-    top:0;
-    padding:12px;
-    text-align:center;
+nav{
+background:#0A1F44;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+font-weight:600;
 }
 
-nav a {
-    color:white;
-    margin:10px;
-    text-decoration:none;
-    font-weight:bold;
+/* HERO */
+.hero{
+background:linear-gradient(rgba(10,31,68,0.8),rgba(10,31,68,0.8)),
+url('file_0000000021d871f8a168663a13d3b214.png');
+background-size:cover;
+background-position:center;
+color:white;
+text-align:center;
+padding:100px 20px;
+}
+
+.hero h1{
+font-size:40px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:25px;
+}
+
+.btn{
+background:#2ecc71;
+padding:12px 25px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#27ae60;
+}
+
+/* STATS */
+.stats{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+margin:40px 0;
+}
+
+.stat{
+background:white;
+margin:10px;
+padding:25px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+text-align:center;
+width:200px;
+}
+
+.stat h2{
+color:#2ecc71;
 }
 
 /* CARD */
-.card {
-    background:white;
-    margin:20px;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+.card{
+background:white;
+margin:20px;
+padding:25px;
+border-radius:12px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* HEADINGS */
-h2 {
-    color:#0A1F44;
-    border-bottom:2px solid #ddd;
-    padding-bottom:6px;
+h2{
+color:#0A1F44;
 }
 
-/* TEXT */
-p, li {
-    color:#7A0C0C;
-    line-height:1.7;
+p,li{
+line-height:1.7;
+color:#333;
 }
 
-/* FORM */
-input, textarea {
-    width:100%;
-    padding:10px;
-    margin:10px 0;
-}
-
-/* BUTTON */
-button {
-    background:#0A1F44;
-    color:white;
-    padding:10px;
-    border:none;
+/* CONTACT BUTTON */
+.whatsapp{
+background:#25D366;
+color:white;
+padding:12px 20px;
+display:inline-block;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
 }
 
 /* FOOTER */
-footer {
-    background:#0A1F44;
-    color:white;
-    text-align:center;
-    padding:15px;
+footer{
+background:#0A1F44;
+color:white;
+text-align:center;
+padding:20px;
 }
+
 </style>
 </head>
 
 <body>
 
-<!-- ===== NEW HERO SECTION ===== -->
-<section class="hero">
-  <img src="file_0000000021d871f8a168663a13d3b214.png">
-
-</section>
-
 <nav>
 <a href="#home">Home</a>
 <a href="#manifesto">Manifesto</a>
-<a href="#vision">Vision</a>
-<a href="#principles">Principles</a>
-<a href="#structure">Structure</a>
-<a href="#activities">Activities</a>
-<a href="#issues">Issues</a>
-<a href="#legal">Legal</a>
-<a href="#news">News</a>
-<a href="#participation">Participation</a>
-<a href="#disclaimer">Disclaimer</a>
-<a href="#faq">FAQ</a>
 <a href="#contact">Contact</a>
 </nav>
 
+<!-- HERO -->
+<section class="hero">
+<h1>Land is Justice</h1>
+<p>Protecting land rights of marginalized communities across Tamil Nadu</p>
+<a href="#contact" class="btn">Report Land Issue</a>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+<div class="stat">
+<h2>500+</h2>
+<p>Cases Identified</p>
+</div>
+
+<div class="stat">
+<h2>120+</h2>
+<p>Legal Actions</p>
+</div>
+
+<div class="stat">
+<h2>10K+</h2>
+<p>People Reached</p>
+</div>
+</div>
+
+<!-- CONTENT -->
 <div class="card" id="home">
-<h2>HOME</h2>
-<p>Land Campaign is a public interest organisation dedicated to protecting land rights, promoting social justice, and securing the rightful land ownership of oppressed and marginalized communities.</p>
-<p>The organisation works through research, legal advocacy, public awareness, and democratic public participation to highlight land rights issues and seek justice for historically disadvantaged communities.</p>
+<h2>About Us</h2>
+<p>Land Campaign works to secure justice, protect land rights, and support marginalized communities through legal and social action.</p>
 </div>
 
 <div class="card" id="manifesto">
-<h2>1. LAND CAMPAIGN – MANIFESTO</h2>
-<p>Land Campaign is a public interest organisation established to protect land rights, social justice, and the fundamental rights of oppressed communities.</p>
-<p>The primary objectives of this organisation are:</p>
+<h2>Our Mission</h2>
 <ul>
-<li>To reclaim, protect, and secure the land rights of oppressed and marginalized communities.</li>
-<li>To reclaim and safeguard Depressed Classes Conditional Lands (Panchami Lands).</li>
-<li>To intervene in illegal land occupation cases.</li>
-<li>To expose unlawful land grabbing.</li>
-<li>To secure justice for affected communities.</li>
-<li>To create legal awareness.</li>
-<li>To advocate land reforms.</li>
-</ul>
-<p>Land Campaign functions as a voluntary public-interest organisation committed to equality and land rights.</p>
-</div>
-
-<div id="vision" style="background:#f9fbfd;padding:20px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,0.08);">
-
-<h2 style="text-align:center;">2. ORGANISATION VISION</h2>
-
-<p style="font-style:italic;text-align:center;color:#555;">
-“Land is not just property — it is dignity, identity, and justice.”
-</p>
-
-<p>
-<strong>Vision:</strong><br>
-To build a just and inclusive society where land rights are protected, 
-and every individual has equal access to land, dignity, and opportunity.
-</p>
-
-<p><strong>Mission:</strong></p>
-
-<ul>
-<li>To take strong legal and social action against violations of land rights, especially Panchami land encroachments.</li>
-<li>To expose injustice, corruption, and irregularities in land ownership.</li>
-<li>To safeguard the rightful ownership of marginalized communities.</li>
-<li>To raise public awareness and empower citizens to defend their rights.</li>
-</ul>
-
-</div>
-
-<div class="card" id="principles">
-<h2>3. CORE PRINCIPLES</h2>
-<p>Social Justice • Equality • Transparency • Accountability • People’s Participation</p>
-</div>
-
-<div class="card" id="structure">
-<h2>4. ORGANISATION STRUCTURE</h2>
-<p>
-Chief Organizer – A B Moorthy<br>
-Managing Director – Ma Pa Varghese<br>
-Finance Director – P Sekar<br>
-State Coordinator – P Ellappan<br>
-Project Director – A John Nevis
-</p>
-</div>
-
-<div class="card" id="activities">
-<h2>5. KEY ACTIVITIES</h2>
-<ul>
-<li>Research and investigation into land rights violations.</li>
-<li>Filing Public Interest Litigations (PILs).</li>
-<li>Public awareness campaigns.</li>
-<li>Legal advocacy.</li>
-<li>Public mobilisation.</li>
+<li>Protect Panchami lands</li>
+<li>Stop illegal land grabbing</li>
+<li>Support affected communities</li>
+<li>Promote land reforms</li>
 </ul>
 </div>
 
-<div class="card" id="issues">
-<h2>6. LAND ISSUES / CASE DOCUMENTATION</h2>
-<p>Panchami Land Violations • Illegal Land Grabbing • Public Land Encroachment • Documentation of Violations</p>
-</div>
-
-<div class="card" id="legal">
-<h2>7. LEGAL ACTION</h2>
-<p>PIL • Complaints • Government Representation • Legal Advocacy</p>
-</div>
-
-<div class="card" id="news">
-<h2>8. NEWS & UPDATES</h2>
-<p>Campaign Activities • Legal Developments • Public Meetings • Press Statements</p>
-</div>
-
-<div class="card" id="participation">
-<h2>9. PUBLIC PARTICIPATION</h2>
-<p>Join as volunteer • Provide information • Offer support • Participate in campaigns</p>
-</div>
-
-<div class="card" id="disclaimer">
-<h2>10. DISCLAIMER</h2>
-<p>Land Campaign operates within the Constitution of India and applicable laws.</p>
-</div>
-
-<div class="card" id="faq">
-<h2>11. FAQ</h2>
-<p><b>Who can join?</b> Anyone</p>
-<p><b>How to report land issues?</b> Contact section</p>
-<p><b>Legal support available?</b> Yes</p>
-</div>
-
+<!-- CONTACT -->
 <div class="card" id="contact">
-<h2>12. CODE OF CONTACT</h2>
-<p>
-LAND CAMPAIGN<br>
-1525B1 Buddha Nagar 4th St<br>
-Vengikkal, Kanji Road<br>
-Tiruvannamalai<br>
-Tamilnadu India 606604<br>
-Mobile : 84380 00465<br>
-Email: info@landcampaign.org<br>
-Website: www.landcampaign.org
-</p>
-</div>
-
-<div class="card">
-
-<p>
-Have information about land issues or Panchami land violations?
-Your voice matters. Reach out to us and help bring justice to affected communities.
-</p>
+<h2>Report Land Issue</h2>
 
 <form action="https://formspree.io/f/mnjoevnk" method="POST">
-
-<input type="hidden" name="_subject" value="Land Campaign Contact">
-<input type="hidden" name="_next" value="https://www.landcampaign.org/thankyou.html">
-<input type="hidden" name="_captcha" value="false">
-<input type="text" name="_gotcha" style="display:none">
-
 <input type="text" name="name" placeholder="Your Name" required>
 <input type="email" name="email" placeholder="Your Email" required>
 <textarea name="message" placeholder="Your Message" required></textarea>
 
-<button type="submit" onclick="this.innerText='Sending...'">
-Send Message
-</button>
-
+<button type="submit">Send</button>
 </form>
 
-<p style="margin-top:15px;text-align:center;">
-<a href="https://wa.me/919344900465?text=Hello%2C%20I%20am%20reporting%20a%20Panchami%20land%20issue.%20Please%20contact%20me." target="_blank" 
-style="display:inline-block;background:#25D366;color:white;padding:10px 18px;border-radius:6px;text-decoration:none;font-weight:bold;">
-📱 Report via WhatsApp
-</a>
-</p>
-     
-<p>
-Together, we can protect land rights and ensure justice.
-</p>
+<br>
+
+<a href="https://wa.me/919344900465" class="whatsapp">Report via WhatsApp</a>
 
 </div>
 
