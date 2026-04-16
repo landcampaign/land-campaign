@@ -1,274 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Land Campaign</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Land Campaign | Justice for Land Rights</title>
-
-<style>
-
-body{
-margin:0;
-font-family: 'Segoe UI', sans-serif;
-background:#f4f7fb;
-}
-
-/* NAV */
-nav{
-background:#0A1F44;
-padding:15px;
-text-align:center;
-position:sticky;
-top:0;
-z-index:1000;
-}
-
-nav a{
-color:white;
-margin:10px;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* HERO */
-.hero{
-background:linear-gradient(rgba(10,31,68,0.8),rgba(10,31,68,0.8)),
-url('file_0000000021d871f8a168663a13d3b214.png');
-background-size:cover;
-background-position:center;
-color:white;
-text-align:center;
-padding:110px 20px;
-}
-
-.hero h1{
-font-size:40px;
-font-weight:900;
-}
-
-.hero p{
-font-size:18px;
-}
-
-.btn{
-background:#2ecc71;
-padding:12px 25px;
-border-radius:30px;
-color:white;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* TICKER */
-.ticker{
-background:#ffcc00;
-padding:10px;
-overflow:hidden;
-white-space:nowrap;
-}
-
-.ticker p{
-display:inline-block;
-animation:scroll 12s linear infinite;
-font-weight:bold;
-}
-
-@keyframes scroll{
-0%{transform:translateX(100%)}
-100%{transform:translateX(-100%)}
-}
-
-/* STATS */
-.stats{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-margin:40px 10px;
-}
-
-.stat{
-background:white;
-margin:10px;
-padding:20px;
-border-radius:12px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
-text-align:center;
-width:200px;
-}
-
-.stat h2{
-color:#2ecc71;
-}
-
-/* CARD */
-.card{
-background:white;
-margin:20px;
-padding:25px;
-border-radius:12px;
-box-shadow:0 4px 15px rgba(0,0,0,0.1);
-}
-
-h2{
-color:#0A1F44;
-}
-
-p, li{
-line-height:1.7;
-color:#333;
-font-weight:bold;
-}
-
-/* FORM */
-input, textarea{
-width:100%;
-padding:12px;
-margin:10px 0;
-border-radius:6px;
-border:1px solid #ccc;
-}
-
-button{
-background:#0A1F44;
-color:white;
-padding:12px;
-border:none;
-width:100%;
-font-weight:bold;
-}
-
-/* WHATSAPP */
-.whatsapp{
-background:#25D366;
-color:white;
-padding:12px 20px;
-display:inline-block;
-border-radius:8px;
-text-decoration:none;
-font-weight:bold;
-}
-
-/* CTA */
-.cta{
-background:#0A1F44;
-color:white;
-text-align:center;
-padding:40px;
-margin:30px 0;
-}
-
-footer{
-background:#0A1F44;
-color:white;
-text-align:center;
-padding:20px;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <nav>
-<a href="#home">Home</a>
-<a href="#manifesto">Manifesto</a>
-<a href="#vision">Vision</a>
-<a href="#activities">Activities</a>
-<a href="#contact">Contact</a>
+<h2>LAND CAMPAIGN</h2>
+<div>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="work.html">Work</a>
+<a href="cases.html">Cases</a>
+<a href="contact.html">Contact</a>
+</div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
-<h1>THIS LAND IS THEIR RIGHT</h1>
-<p>Protecting land rights of marginalized communities across Tamil Nadu</p>
-<a href="#contact" class="btn">Report Land Issue</a>
+<h1>LAND RIGHTS • SOCIAL JUSTICE • EQUALITY</h1>
+<p>Protecting land rights of oppressed and marginalized communities</p>
+<a href="contact.html" class="btn">Report Land Issue</a>
 </section>
 
-<!-- TICKER -->
-<div class="ticker">
-<p>🚨 Panchami land violations increasing | Report now | Justice for oppressed communities 🚨</p>
-</div>
-
-<!-- STATS -->
-<div class="stats">
-<div class="stat"><h2>500+</h2><p>Cases Identified</p></div>
-<div class="stat"><h2>120+</h2><p>Legal Actions</p></div>
-<div class="stat"><h2>10K+</h2><p>People Reached</p></div>
-</div>
-
-<!-- HOME -->
-<div class="card" id="home">
-<h2>About Land Campaign</h2>
-<p>Land Campaign is a public interest organisation dedicated to protecting land rights, promoting social justice, and securing rightful ownership for marginalized communities.</p>
-</div>
-
-<!-- MANIFESTO -->
-<div class="card" id="manifesto">
-<h2>Manifesto</h2>
-<ul>
-<li>Protect Panchami Lands</li>
-<li>Stop illegal land grabbing</li>
-<li>Secure justice for affected communities</li>
-<li>Create legal awareness</li>
-<li>Advocate land reforms</li>
-</ul>
-</div>
-
-<!-- VISION -->
-<div class="card" id="vision">
-<h2>Vision</h2>
-<p><b>“Land is dignity, identity, and justice.”</b></p>
-<p>To build a just society where land rights are protected for all.</p>
-</div>
-
-<!-- ACTIVITIES -->
-<div class="card" id="activities">
-<h2>Key Activities</h2>
-<ul>
-<li>Research land violations</li>
-<li>Legal advocacy & PIL</li>
-<li>Public awareness campaigns</li>
-<li>Community mobilisation</li>
-</ul>
-</div>
-
-<!-- CTA -->
-<div class="cta">
-<h2>Stand With Justice</h2>
-<a href="#contact" class="btn">Join / Support</a>
-</div>
-
-<!-- CONTACT -->
-<div class="card" id="contact">
-<h2>Report Land Issue</h2>
-
-<form action="https://formspree.io/f/mnjoevnk" method="POST">
-
-<input type="text" name="name" placeholder="Your Name" required>
-<input type="email" name="email" placeholder="Your Email" required>
-<textarea name="message" placeholder="Describe land issue" required></textarea>
-
-<button type="submit">Send Message</button>
-
-</form>
-
-<br>
-
-<a href="https://wa.me/919344900465" class="whatsapp">
-📱 Report via WhatsApp
-</a>
-
-<p style="margin-top:20px;">
-Land Campaign<br>
-Tiruvannamalai |Tamilnadu | India<br>
-Mobile: 84380 00465<br>
-Email: info@landcampaign.org
+<div class="card">
+<h2>Home</h2>
+<p>
+Land Campaign is a public interest organisation dedicated to protecting land rights, promoting social justice, and securing rightful land ownership of oppressed and marginalized communities.
 </p>
-
 </div>
 
-<footer>
-<p>© 2026 Land Campaign</p>
-</footer>
+<footer>© 2026 Land Campaign</footer>
 
 </body>
 </html>
