@@ -1,59 +1,111 @@
-body{
-margin:0;
-font-family:'Segoe UI', sans-serif;
-background:#f4f7fb;
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #ffffff;
 }
 
-nav{
-background:#071633;
-padding:15px 20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
+/* 🔹 Smooth Fade Animations */
+.fade-in {
+  animation: fadeIn 1.5s ease-in;
 }
 
-nav h2{
-color:white;
-margin:0;
+.fade-up {
+  animation: fadeUp 1.5s ease-in;
 }
 
-nav a{
-color:white;
-margin:6px;
-text-decoration:none;
-font-weight:bold;
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-.hero{
-background:linear-gradient(rgba(7,22,51,0.85),rgba(7,22,51,0.85)),
-url('file_0000000021d871f8a168663a13d3b214.png');
-background-size:cover;
-color:white;
-text-align:center;
-padding:100px 20px;
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.btn{
-background:#2ecc71;
-padding:12px 25px;
-border-radius:30px;
-color:white;
-text-decoration:none;
-font-weight:bold;
+/* 🔹 Marquee */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background: white;
+  padding: 10px 0;
 }
 
-.card{
-background:white;
-margin:20px;
-padding:25px;
-border-radius:12px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+.marquee p {
+  display: inline-block;
+  color: darkblue;
+  font-weight: bold;
+  animation: scrollText 12s linear infinite;
 }
 
-footer{
-background:#071633;
-color:white;
-text-align:center;
-padding:20px;
+@keyframes scrollText {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+/* 🔹 Hero */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-img {
+  width: 85%;
+  max-width: 950px;
+  border-radius: 8px;
+}
+
+/* 🔹 Blink Text */
+.blink {
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 20px;
+  animation: blinkText 1.5s infinite;
+}
+
+@keyframes blinkText {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* 🔹 Honour Box */
+.honour-box {
+  width: 85%;
+  margin: 40px auto;
+  padding: 25px;
+  border: 2px solid #ddd;
+  text-align: center;
+  background: #f9f9f9;
+  font-size: 17px;
+  line-height: 1.7;
+  border-radius: 8px;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+
+  .blink {
+    font-size: 36px;
+  }
+
+  .hero-img {
+    width: 95%;
+  }
+
+  .honour-box {
+    font-size: 15px;
+    padding: 15px;
+  }
+
+  .marquee p {
+    font-size: 14px;
+  }
 }
