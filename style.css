@@ -127,3 +127,15 @@ body {
 .navbar a:hover {
   color: yellow;
 }
+.honour-text {
+  color: #0b3d91; /* Dark Blue 🔵 */
+  font-weight: 600;
+  text-align: center;
+  animation: blinkText 1.5s infinite;
+}
+
+@keyframes blinkText {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
