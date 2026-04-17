@@ -152,3 +152,55 @@ body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to bottom, #f5f7fa, #e4ecf7);
 }
+/* ===== ABOUT PAGE UPGRADE ===== */
+
+/* Section spacing */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 10px;
+}
+
+/* Card upgrade */
+.card {
+  background: linear-gradient(135deg, #f8fafc, #ffffff);
+  padding: 22px;
+  margin-bottom: 25px;
+  border-radius: 14px;
+  border-left: 6px solid #0b3d91;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Headings */
+.card h2 {
+  color: #0b3d91;
+  margin-bottom: 10px;
+}
+
+/* Lists */
+.card ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.card ul li {
+  margin-bottom: 8px;
+}
+
+/* Highlight box */
+.highlight {
+  background: #0b3d91;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Section title */
+.hero h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+}
