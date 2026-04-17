@@ -102,3 +102,15 @@ body {
 ul {
   padding-left: 20px;
 }
+/* Work page heading */
+.hero h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
