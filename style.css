@@ -1,141 +1,58 @@
-/* Reset */
 body {
-  margin: 0;
   font-family: Arial, sans-serif;
-  background: #ffffff;
+  margin: 0;
+  background: #f5f7fa;
 }
 
-/* 🔹 Smooth Fade Animations */
+h1, h2 {
+  color: #0b3d91;
+}
+
+section {
+  padding: 20px;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Card Design 🔥 */
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Headings */
+.card h2 {
+  margin-bottom: 10px;
+}
+
+/* List styling */
+ul {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: gray;
+}
+
+/* Fade Animation */
 .fade-in {
   animation: fadeIn 1.5s ease-in;
 }
 
-.fade-up {
-  animation: fadeUp 1.5s ease-in;
-}
-
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* 🔹 Marquee */
-.marquee {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  background: white;
-  padding: 10px 0;
-}
-
-.marquee p {
-  display: inline-block;
-  color: darkblue;
-  font-weight: bold;
-  animation: scrollText 12s linear infinite;
-}
-
-@keyframes scrollText {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
-}
-
-/* 🔹 Hero */
-.hero {
-  text-align: center;
-  padding: 40px 20px;
-}
-
-.hero-img {
-  width: 85%;
-  max-width: 950px;
-  border-radius: 8px;
-}
-
-/* 🔹 Blink Text */
-.blink {
-  font-size: 60px;
-  font-weight: bold;
-  margin-top: 20px;
-  animation: blinkText 1.5s infinite;
-}
-
-@keyframes blinkText {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
-}
-
-/* 🔹 Honour Box */
-.honour-box {
-  width: 85%;
-  margin: 40px auto;
-  padding: 25px;
-  border: 2px solid #ddd;
-  text-align: center;
-  background: #f9f9f9;
-  font-size: 17px;
-  line-height: 1.7;
-  border-radius: 8px;
-}
-
-/* 📱 Mobile Responsive */
-@media (max-width: 768px) {
-
-  .blink {
-    font-size: 36px;
-  }
-
-  .hero-img {
-    width: 95%;
-  }
-
-  .honour-box {
-    font-size: 15px;
-    padding: 15px;
-  }
-
-  .marquee p {
-    font-size: 14px;
-  }
-}
-/* 🔹 Navbar */
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 15px;
-  background: black;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  color: yellow;
-}
-.honour-text {
-  color: #0b3d91; /* Dark Blue 🔵 */
-  font-weight: 600;
-  text-align: center;
-  animation: blinkText 1.5s infinite;
-}
-
-@keyframes blinkText {
-  0% { opacity: 1; }
-  50% { opacity: 0.3; }
-  100% { opacity: 1; }
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
 }
