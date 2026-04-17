@@ -69,3 +69,39 @@ body {
 ul {
   padding-left: 20px;
 }
+
+/* Running text */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.marquee p {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 100%;
+  animation: scrollText 10s linear infinite;
+  font-weight: bold;
+}
+
+@keyframes scrollText {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+/* Blinking honour text */
+.honour-text {
+  color: #0b3d91;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  animation: blinkText 1.5s infinite;
+}
+
+@keyframes blinkText {
+  0% { opacity: 1; }
+  50% { opacity: 0.3; }
+  100% { opacity: 1; }
+}
