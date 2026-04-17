@@ -86,19 +86,19 @@ body {
   margin: 40px auto;
   padding: 10px;
 }
-
 .card {
-  background: #ffffff;
+  background: linear-gradient(135deg, #eef2f3, #ffffff);
   padding: 20px;
   margin-bottom: 20px;
-  border-radius: 12px;
-  border-left: 6px solid #0b3d91;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
+  border-radius: 14px;
+  border-left: 6px solid #00a86b; /* Green */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
-
 .card h2 {
+  color: #0077b6;
   margin-top: 0;
+
+
 }
 
 ul {
