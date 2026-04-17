@@ -88,11 +88,13 @@ body {
 }
 
 .card {
-  background: #fff;
+  background: #ffffff;
   padding: 20px;
   margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  border-left: 6px solid #0b3d91;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
 }
 
 .card h2 {
@@ -113,4 +115,41 @@ ul {
 .card:hover {
   transform: translateY(-5px);
   transition: 0.3s;
+}
+/* ===== WORK PAGE MODERN UPGRADE ===== */
+
+/* Container spacing */
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 15px;
+}
+
+/* Card design */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border-left: 6px solid #0b3d91;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+/* Card hover effect */
+.card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Card title */
+.card h2 {
+  color: #0b3d91;
+}
+
+/* Page background */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #f5f7fa, #e4ecf7);
 }
