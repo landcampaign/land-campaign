@@ -62,11 +62,16 @@ body {
 }
 
 /* ===== BLINKING HONOUR TEXT ===== */
-.honour-text {
+
+}.honour-text {
   color: #0b3d91;
   text-align: center;
-  padding: 15px;
-  font-size: 14px;
+  padding: 25px 15px;
+  font-size: 20px;      /* 🔥 Bigger */
+  font-weight: bold;
+  line-height: 1.6;
+  max-width: 600px;     /* 🔥 Equal width control */
+  margin: auto;
   animation: blinkText 1.5s infinite;
 }
 
