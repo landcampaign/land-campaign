@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f5f5f5;
+  background: linear-gradient(to bottom, #f5f7fa, #e4ecf7);
 }
 
 /* ===== NAVBAR ===== */
@@ -23,15 +23,15 @@ body {
   color: yellow;
 }
 
-/* ===== HERO SECTION ===== */
+/* ===== HERO ===== */
 .hero {
   text-align: center;
   padding: 30px 10px;
 }
+
 .hero-img {
   width: 100%;
   max-width: 100%;
-  border-radius: 0;
 }
 
 .hero h1 {
@@ -39,7 +39,7 @@ body {
   font-size: 28px;
 }
 
-/* ===== RUNNING SCROLL TEXT ===== */
+/* ===== SCROLL TEXT ===== */
 .marquee {
   width: 100%;
   overflow: hidden;
@@ -61,8 +61,7 @@ body {
   100% { transform: translateX(-100%); }
 }
 
-/* ===== BLINKING HONOUR TEXT ===== */
-
+/* ===== HONOUR TEXT ===== */
 .honour-text {
   color: #0b3d91;
   text-align: center;
@@ -70,143 +69,50 @@ body {
   font-size: 20px;
   font-weight: bold;
   line-height: 1.7;
-  max-width: 520px;     /* 🔥 forces equal line break */
+  max-width: 520px;
   margin: auto;
   animation: blinkText 1.2s infinite;
 }
+
 @keyframes blinkText {
   0% { opacity: 1; }
   50% { opacity: 0.3; }
   100% { opacity: 1; }
 }
 
-/* ===== INNER PAGES (ABOUT / WORK / CASES / CONTACT) ===== */
+/* ===== CONTAINER ===== */
 .container {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 10px;
-}
-.card {
-  background: #ffffff;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  border-left: 6px solid #b30000; /* Deep Red */
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-}
-
-.card h2 {
-  color: #111; /* Black */
-
-}
-
-ul {
-  padding-left: 20px;
-}
-/* Work page heading */
-.hero h1 {
-  text-align: center;
-  font-size: 28px;
-  margin-top: 20px;
-}
-
-/* Card hover effect */
-.card:hover {
-  transform: translateY(-5px);
-  transition: 0.3s;
-}
-/* ===== WORK PAGE MODERN UPGRADE ===== */
-
-/* Container spacing */
-.container {
-  max-width: 900px;
-  margin: 50px auto;
-  padding: 15px;
-}
-
-/* Card design */
-.card {
-  background: #ffffff;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 12px;
-  border-left: 6px solid #0b3d91;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
-
-/* Card hover effect */
-.card:hover {
-  transform: translateY(-8px) scale(1.01);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-}
-
-/* Card title */
-.card h2 {
-  color: #0b3d91;
-}
-
-/* Page background */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #f5f7fa, #e4ecf7);
-}
-/* ===== ABOUT PAGE UPGRADE ===== */
-
-/* Section spacing */
-.container {
-  max-width: 900px;
-  margin: 40px auto;
+  max-width: 800px;
+  margin: auto;
   padding: 10px;
 }
 
-/* Card upgrade */
-/* ===== ULTRA CARD DESIGN ===== */
-
+/* ===== CARD (FINAL CLEAN) ===== */
 .card {
   background: #ffffff;
-  padding: 25px;
-  margin: 25px 15px;
-  border-radius: 18px;
-  border-left: 8px solid #0b3d91;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 12px;
+  max-width: 650px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  border-left: 5px solid red;
   transition: 0.3s;
 }
 
-/* Hover effect */
+/* Hover */
 .card:hover {
   transform: translateY(-5px);
 }
 
-/* Heading */
-.card h2 {
-  font-size: 22px;
-  color: #0b3d91;
-  margin-bottom: 12px;
-}
-
-/* Text */
-.card p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-/* List */
-.card ul li {
-  font-size: 16px;
-  margin-bottom: 8px;
-}
-
-/* Headings */
-.card h2 {
-  color: #0b3d91;
+/* Titles */
+.card h2,
+.card h3 {
+  color: #1f4e8c;
   margin-bottom: 10px;
 }
 
 /* Lists */
 .card ul {
-  margin-top: 10px;
   padding-left: 20px;
 }
 
@@ -214,8 +120,7 @@ body {
   margin-bottom: 8px;
 }
 
-/* Highlight box */
-
+/* Highlight */
 .highlight {
   background: #0b3d91;
   color: #fff;
@@ -224,88 +129,9 @@ body {
   text-align: center;
   font-weight: bold;
   margin: 20px 15px;
-  font-size: 15px;
-}
-/* Section title */
-.hero h1 {
-  text-align: center;
-  font-size: 30px;
-  margin-top: 20px;
 }
 
-.card {
-  background: #ffffff;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 15px;
-  max-width: 700px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  border-left: 5px solid red;
-}
-
-.card h3 {
-  color: red;
-  margin-bottom: 10px;
-}
-
-body {
-  background: #f4f6f9;
-}
-
-/* Container - center layout (all pages) */
-.container {
-  max-width: 800px;
-  margin: auto;
-  padding: 10px;
-}
-
-/* Card - same size for all pages */
-.card {
-  background: #ffffff;
-  padding: 20px;
-  margin: 20px auto;
-  border-radius: 15px;
-  max-width: 650px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  border-left: 5px solid red;
-}
-
-/* Title - consistent blue */
-.card h3,
-.card h2 {
-  color: #1f4e8c;
-  margin-bottom: 10px;
-  font-weight: 600;
-}
-
-/* Smooth animation fix */
-.card {
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeUp 0.8s ease forwards;
-}
-
-/* Delay for each card */
-.card:nth-child(1) { animation-delay: 0.1s; }
-.card:nth-child(2) { animation-delay: 0.2s; }
-.card:nth-child(3) { animation-delay: 0.3s; }
-.card:nth-child(4) { animation-delay: 0.4s; }
-.card:nth-child(5) { animation-delay: 0.5s; }
-.card:nth-child(6) { animation-delay: 0.6s; }
-.card:nth-child(7) { animation-delay: 0.7s; }
-
-/* Keyframes */
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* ===== CONTACT ===== */
 .contact-item {
   display: flex;
   align-items: center;
@@ -326,6 +152,7 @@ body {
   text-decoration: none;
   color: #1a73e8;
   font-weight: 500;
+  transition: 0.2s;
 }
 
 .contact-links a:last-child {
@@ -335,4 +162,27 @@ body {
 .contact-links a:hover {
   opacity: 0.7;
   transform: translateY(-1px);
+}
+
+/* ===== ANIMATION ===== */
+.card {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.card:nth-child(1) { animation-delay: 0.1s; }
+.card:nth-child(2) { animation-delay: 0.2s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
