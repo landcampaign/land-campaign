@@ -242,3 +242,21 @@ header .navbar a {
 header .navbar {
   padding: 14px 0 !important;
 }
+
+/* 🔥 NAVBAR STYLE UPGRADE */
+.navbar a {
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* touch / active effect */
+.navbar a:active {
+  color: #facc15;
+}
+
+/* 🔥 HONOUR BOX VISIBILITY FIX */
+.honour-box {
+  opacity: 1;
+}
