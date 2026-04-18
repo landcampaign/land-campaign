@@ -312,26 +312,27 @@ body {
   gap: 12px;
 }
 
-.contact-item .icon {
-  font-size: 24px;
+.contact-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-.contact-item .text h3 {
-  margin: 0;
-  color: #2c4a73;
-}
-
-.contact-item .text p {
-  margin: 4px 0 0;
-  font-size: 15px;
-}
-
-.contact-item a {
+.contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   text-decoration: none;
   color: #1a73e8;
   font-weight: 500;
 }
 
-.contact-item a:hover {
-  text-decoration: underline;
+.contact-links a:last-child {
+  font-size: 18px;
+}
+
+.contact-links a:hover {
+  opacity: 0.7;
+  transform: translateY(-1px);
 }
