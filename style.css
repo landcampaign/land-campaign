@@ -305,3 +305,33 @@ body {
     transform: translateY(0);
   }
 }
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-item .icon {
+  font-size: 24px;
+}
+
+.contact-item .text h3 {
+  margin: 0;
+  color: #2c4a73;
+}
+
+.contact-item .text p {
+  margin: 4px 0 0;
+  font-size: 15px;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #1a73e8;
+  font-weight: 500;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
