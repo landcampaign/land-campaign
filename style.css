@@ -212,3 +212,8 @@ body {
 .navbar a {
   font-size: 17px;
 }
+
+.navbar {
+  padding: 12px 0;
+  text-align: center;
+}
