@@ -136,3 +136,19 @@ header {
   color: #1a73e8;
   font-weight: 500;
 }
+
+/* 🔹 reduce card spacing */
+.card {
+  margin: 15px auto;
+  padding: 16px;
+}
+
+/* 🔹 reduce heading size */
+.card h2, .card h3 {
+  font-size: 18px;
+}
+
+/* 🔹 reduce paragraph size */
+.card p {
+  font-size: 15px;
+}
