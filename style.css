@@ -152,3 +152,18 @@ header {
 .card p {
   font-size: 15px;
 }
+/* 🔥 FIX INTRO BOX (Home page) */
+
+.intro-box {
+  margin: 15px auto;
+  padding: 16px;
+}
+
+.intro-box h1 {
+  font-size: 20px;
+}
+
+.intro-box p {
+  font-size: 15px;
+  line-height: 1.6;
+}
