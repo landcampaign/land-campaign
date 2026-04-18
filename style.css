@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: linear-gradient(to bottom, #f5f7fa, #e4ecf7);
-  padding-bottom: 75px;
+  padding-bottom: 70px;
 }
 
 /* ===== SCROLL TEXT ===== */
@@ -19,7 +19,7 @@ body {
   white-space: nowrap;
   padding-left: 100%;
   animation: scrollText 12s linear infinite;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   color: #0b3d91;
 }
@@ -32,89 +32,39 @@ body {
 /* ===== HERO ===== */
 .hero {
   text-align: center;
-  padding: 25px 10px;
+  padding: 20px;
 }
 
 .hero-img {
   width: 100%;
-  height: auto;
 }
 
 /* ===== HONOUR BOX ===== */
 .honour-box {
-  max-width: 900px;
-  margin: 12px auto;
-  padding: 14px 18px;
+  max-width: 850px;
+  margin: 10px auto;
+  padding: 12px;
+  background: #ffffff;
   text-align: center;
   border-radius: 10px;
-  background: #ffffff;
-  color: #333;
-  font-size: 15px;
-  line-height: 1.6;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  font-size: 14px;
 }
 
-.honour-box strong {
-  color: #c79a2b;
-}
-
-/* ===== INTRO SECTION ===== */
-.hero-intro {
-  padding: 25px 15px;
-}
-
+/* ===== INTRO ===== */
 .intro-box {
-  max-width: 900px;
-  margin: auto;
+  max-width: 850px;
+  margin: 20px auto;
+  padding: 18px;
   background: #ffffff;
-  padding: 22px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .intro-box h1 {
-  font-size: 24px;
-  margin-bottom: 12px;
+  font-size: 22px;
 }
 
 .intro-box p {
-  font-size: 16px;
-  line-height: 1.7;
-}
-
-.highlight {
-  background: #0b3d91;
-  color: #fff;
-  padding: 5px 8px;
-  border-radius: 6px;
-}
-
-/* ===== CARD (OTHER PAGES) ===== */
-.card {
-  background: #ffffff;
-  padding: 18px;
-  margin: 18px auto;
-  border-radius: 12px;
-  max-width: 700px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  border-left: 5px solid red;
-}
-
-.card h2, .card h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.card p {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-/* ===== CONTACT ===== */
-.contact-links a {
-  text-decoration: none;
-  color: #1a73e8;
-  font-weight: 500;
+  font-size: 15px;
 }
 
 /* ===== NAVBAR ===== */
@@ -126,26 +76,13 @@ header {
 
 .navbar {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: space-around;
   background: #000;
-  padding: 14px 0;
+  padding: 12px 0;
 }
 
 .navbar a {
-  font-size: 17px;
-  font-weight: 600;
   color: #fff;
+  font-size: 16px;
   text-decoration: none;
-}
-
-.navbar a:active {
-  color: #c79a2b;
-}
-
-/* ===== SMART NO TEXT SELECT ===== */
-.intro-box, .card {
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
