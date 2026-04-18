@@ -203,3 +203,12 @@ body {
 .honour-box strong {
   color: #facc15;
 }
+
+.marquee p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.navbar a {
+  font-size: 17px;
+}
