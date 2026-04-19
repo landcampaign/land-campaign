@@ -41,8 +41,12 @@ header {
 
 /* ===== HERO ===== */
 .hero {
-  background: url("hero.jpg") center/cover no-repeat;
-  height: 220px;
+  background: url("hero.jpg") no-repeat center;
+  background-size: 100% auto;   /* full image */
+  
+  height: auto;
+  padding-top: 40%;   /* aspect ratio */
+
   display: flex;
   align-items: center;
   justify-content: center;
