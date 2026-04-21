@@ -1,220 +1,59 @@
-/* ===== RESET ===== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Land Campaign</title>
 
-/* ===== BODY ===== */
-body {
-  background: #f4f6f8;
-  color: #333;
-  line-height: 1.6;
-}
+  <!-- ✅ CSS -->
+  <link rel="stylesheet" href="style.css?v=2">
+</head>
 
-/* ===== NAVBAR ===== */
-header {
-  background: linear-gradient(90deg, #0A1F44, #123C7A);
-  padding: 15px;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
+<body>
 
-.navbar {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-}
+<header>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="work.html">Work</a>
+    <a href="cases.html">Cases</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  transition: 0.3s;
-}
+<section class="hero">
+  <h1>About</h1>
+</section>
 
-.navbar a:hover {
-  color: #FFD700;
-}
+<section class="container">
 
-/* ===== HERO (FIXED FOR ALL PAGES) ===== */
-.hero {
-  background: url("/hero.jpg") no-repeat center;
-  background-size: cover;
-  background-color: #000;
+  <div class="card">
+    <h3>Introduction</h3>
+    <p>
+      During the British colonial rule in India in 1892, under Government Order No. 1010/10-A,
+      conditional (Panchami) lands were allotted to the Depressed Classes for their social and economic advancement.
+    </p>
+    <p>
+      These lands were legally reserved exclusively for the Depressed Classes and could not be sold or transferred to others.
+    </p>
+    <p>
+      This assignment and its conditions were recommended by J. H. A. Tremenheere,
+      the then Collector of Chengalpattu, and were brought into effect by the British administration.
+    </p>
+  </div>
 
-  height: 260px;
+  <div class="card">
+    <h3>About the Land Campaign</h3>
+    <p>
+      This campaign is led by social activists with over three decades of grassroots experience.
+    </p>
+    <p>
+      Our main focus is to safeguard Panchami lands, prevent unlawful encroachments,
+      and ensure restoration to rightful owners.
+    </p>
+  </div>
 
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+</section>
 
-  color: white;
-  text-align: center;
-  position: relative;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(10,31,68,0.6);
-}
-
-.hero h1 {
-  position: relative;
-  font-size: 28px;
-  z-index: 1;
-  margin-bottom: 10px;
-  animation: fadeIn 2s ease;
-}
-
-/* ===== CONTAINER ===== */
-.container {
-  padding: 20px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-/* ===== CARD (FINAL CLEAN) ===== */
-.card {
-  width: 100%;
-  margin: 15px auto;
-  padding: 20px;
-
-  border: 2px solid #e53935;
-  border-radius: 12px;
-  background: white;
-
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transition: 0.3s;
-  animation: slideUp 0.8s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-
-/* ===== CARD HEADING ===== */
-.card h3 {
-  border-bottom: 2px solid #1976d2;
-  padding-bottom: 6px;
-  margin-bottom: 10px;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 480px) {
-  .card {
-    max-width: 95%;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .card {
-    max-width: 600px;
-  }
-}
-
-@media (min-width: 769px) {
-  .card {
-    max-width: 650px;
-  }
-}
-
-/* ===== HIGHLIGHT ===== */
-.highlight {
-  text-align: center;
-  font-weight: bold;
-  color: #0A1F44;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
-  animation: blink 2s infinite;
-}
-
-/* ===== BUTTON ===== */
-button {
-  background: linear-gradient(90deg, #0A1F44, #123C7A);
-  color: white;
-  border: none;
-  padding: 10px 18px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-button:hover {
-  background: #FFD700;
-  color: black;
-}
-
-/* ===== INPUT ===== */
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
-
-/* ===== WHATSAPP BUTTON ===== */
-.whatsapp-btn {
-  display: inline-block;
-  padding: 10px 15px;
-  background: #25D366;
-  color: white;
-  border-radius: 6px;
-  text-decoration: none;
-  margin-top: 10px;
-}
-
-.whatsapp-btn:hover {
-  background: #1ebc59;
-}
-
-/* ===== ANIMATIONS ===== */
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-@keyframes slideUp {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes blink {
-  50% {opacity: 0.5;}
-}
-
-/* ===== INTRO ===== */
-.intro {
-  padding: 30px 15px;
-}
-
-.intro h2 {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.intro h3 {
-  margin-top: 15px;
-  font-size: 18px;
-}
-
-.intro p {
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-.contact-item p {
-  margin: 5px 0;
-}
+</body>
+</html>
