@@ -33,16 +33,38 @@ header {
   text-decoration: none;
   font-size: 15px;
   transition: 0.3s;
+
+  position: relative;
+  font-weight: bold;
+  padding-bottom: 5px;
 }
 
 .navbar a:hover {
   color: #FFD700;
 }
 
-/* ===== HERO (FIXED - ALL DEVICES) ===== */
+/* 🔵 NAVBAR UNDERLINE */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  background: #2196f3;
+  left: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* ===== HERO FINAL ===== */
 .hero {
   position: relative;
+  width: 100%;
   height: 320px;
+
   background: url("/hero.jpg") no-repeat center;
   background-size: cover;
 
@@ -51,9 +73,10 @@ header {
   justify-content: center;
 
   text-align: center;
+  overflow: hidden;
 }
 
-/* 🔥 Dark overlay (text visible) */
+/* 🔥 Dark overlay */
 .hero::after {
   content: "";
   position: absolute;
@@ -62,9 +85,10 @@ header {
   background: rgba(10,31,68,0.55);
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
-/* 🔥 HERO TEXT FIX (Laptop + Mobile) */
+/* 🔥 HERO TEXT */
 .hero h1 {
   position: relative;
   color: white;
@@ -81,7 +105,7 @@ header {
   margin: auto;
 }
 
-/* ===== 🔥 SECTION HEADING FIX ===== */
+/* ===== SECTION HEADING ===== */
 .container h2 {
   font-size: 26px;
   font-weight: bold;
@@ -89,7 +113,6 @@ header {
   position: relative;
 }
 
-/* 🔵 Blue underline */
 .container h2::after {
   content: "";
   display: block;
@@ -215,7 +238,7 @@ input, textarea {
   50% {opacity: 0.5;}
 }
 
-/* ===== INTRO ===== */
+/* ===== INTRO (optional keep) ===== */
 .intro {
   padding: 30px 15px;
 }
@@ -237,24 +260,4 @@ input, textarea {
 
 .contact-item p {
   margin: 5px 0;
-}
-
-.navbar a {
-  position: relative;
-  font-weight: bold;
-}
-
-.navbar a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 3px;
-  background: #2196f3;
-  left: 0;
-  bottom: -5px;
-  transition: 0.3s;
-}
-
-.navbar a:hover::after {
-  width: 100%;
 }
