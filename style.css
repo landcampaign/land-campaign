@@ -59,11 +59,10 @@ header {
   width: 100%;
 }
 
-/* ===== HERO FINAL ===== */
+/* ===== HERO PERFECT FIX ===== */
 .hero {
-  position: relative;
   width: 100%;
-  height: 320px;
+  height: 60vh;
 
   background: url("./hero.jpg") no-repeat center;
   background-size: cover;
@@ -72,41 +71,13 @@ header {
   align-items: center;
   justify-content: center;
 
-  text-align: center;
   overflow: hidden;
 }
 
-/* 🔥 Overlay */
-.hero::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(10,31,68,0.55);
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-/* 🔥 Text with animation */
-.hero h1 {
-  position: relative;
-  color: white;
-  font-size: 34px;
-  font-weight: bold;
-  z-index: 2;
-  animation: fadeIn 2s ease;
-}
-
-/* 🔥 Fade animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+/* 🔥 MOBILE FIX */
+@media (max-width: 480px) {
+  .hero {
+    height: 35vh;
   }
 }
 
@@ -230,11 +201,6 @@ input, textarea {
 }
 
 /* ===== ANIMATIONS ===== */
-@keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
 @keyframes slideUp {
   from {
     transform: translateY(30px);
@@ -250,7 +216,7 @@ input, textarea {
   50% {opacity: 0.5;}
 }
 
-/* ===== INTRO (optional keep) ===== */
+/* ===== INTRO ===== */
 .intro {
   padding: 30px 15px;
 }
