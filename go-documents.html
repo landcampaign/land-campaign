@@ -20,13 +20,16 @@
 
     .container {
       padding: 20px;
+      max-width: 1000px;
+      margin: auto;
     }
 
     .case-box {
       background: white;
-      padding: 15px;
-      margin-bottom: 20px;
+      padding: 20px;
+      margin-bottom: 25px;
       border-left: 5px solid red;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
 
     a.button {
@@ -37,13 +40,25 @@
       background: red;
       color: white;
       text-decoration: none;
+      border-radius: 4px;
+    }
+
+    a.button:hover {
+      background: darkred;
     }
 
     iframe {
       width: 100%;
       height: 500px;
-      margin-top: 10px;
-      border: none;
+      margin-top: 15px;
+      border: 1px solid #ccc;
+    }
+
+    .note {
+      background: #fff3cd;
+      padding: 10px;
+      border-left: 4px solid orange;
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -56,14 +71,21 @@
 
 <div class="container">
 
-  <p><strong>Note:</strong> These are original archival records from the Madras Record Office (1892), forming the legal foundation of Panchami land assignment.</p>
+  <div class="note">
+    <strong>Note:</strong> These are original archival records from the Madras Record Office (1892), forming the legal foundation of Panchami land assignment.
+  </div>
 
   <!-- G.O 1010 -->
   <div class="case-box">
     <h2>G.O. No. 1010 (1892)</h2>
-    <p>Original Government Order issued for land assignment to Depressed Classes.</p>
+    <p>
+      This Government Order establishes the assignment of land to the Depressed Classes for their social and economic upliftment. 
+      These lands are conditionally assigned and cannot be legally transferred.
+    </p>
 
-    <a class="button" href="documents/go-1010.pdf" target="_blank">Download PDF</a>
+    <a class="button" href="documents/go-1010.pdf" target="_blank">
+      Download PDF
+    </a>
 
     <iframe src="documents/go-1010.pdf"></iframe>
   </div>
@@ -71,16 +93,20 @@
   <!-- G.O 1010A -->
   <div class="case-box">
     <h2>G.O. No. 1010-A (1892)</h2>
-    <p>Supplementary Government Order with detailed legal framework.</p>
+    <p>
+      This supplementary Government Order provides the detailed administrative and legal framework governing the Panchami land system and its protection.
+    </p>
 
-    <p><strong>Note:</strong> Full document is the original archival record. Short version is provided for quick reference.</p>
+    <div class="note">
+      <strong>Note:</strong> Full document is the original archival record. Short version is provided for quick public understanding.
+    </div>
 
     <a class="button" href="documents/go-1010A-full.pdf" target="_blank">
-      Download Full Document (90 pages)
+      Full Document (90 pages)
     </a>
 
     <a class="button" href="documents/go-1010A-short.pdf" target="_blank">
-      Download Short Version (40 pages)
+      Short Version (40 pages)
     </a>
 
     <iframe src="documents/go-1010A-full.pdf"></iframe>
